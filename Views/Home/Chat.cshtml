@@ -1,0 +1,773 @@
+﻿@model dynamic
+
+@{
+  ViewBag.Title = "Chat";
+  Layout = "_Layout";
+}
+
+        <!-- Grid -->
+        <div class="row">
+
+          <!-- Grid Item -->
+          <div class="col-xl-12">
+
+            <!-- Module -->
+            <div class="dt-module dt-module--chat">
+
+              <!-- Module Sidebar -->
+              <div class="dt-module__sidebar">
+
+                <!-- Sidebar Header -->
+                <div class="dt-module__sidebar-header">
+
+                  <!-- User Detail  -->
+                  <div class="dt-avatar-wrapper mb-8 d-none d-md-flex">
+                    <div class="dt-avatar-status">
+                      <img class="dt-avatar size-50" src="https://via.placeholder.com/150x150" alt="Dinesh Suthar">
+                      <div class="dot-shape bg-success pulse-success dot-shape-lg"></div>
+                    </div>
+                    <span class="dt-avatar-info">
+            <span class="dt-avatar-name">Robert Johnson</span>
+            <span class="f-12 d-inline-block text-light-gray">robert@example.com</span>
+                    </span>
+
+                  </div>
+                  <!-- User Detail  -->
+
+                   <!-- Search Box -->
+                  <form class="search-box d-none d-md-block">
+                    <input class="form-control border-0 shadow-none bg-transparent" placeholder="Search or start new chat" value="" type="search"> 
+          <span class="search-icon text-light-gray"><i class="icon icon-search icon-lg"></i></span>
+                  </form>
+                  <!-- /search box -->
+
+          <!-- App Quick Menu -->
+                  <div class="quick-menu-list">
+
+                    <!-- Search Box -->
+                    <form class="search-box d-md-none">
+                      <input class="form-control" type="search" id="address" name="address"
+                             placeholder="Search in app...">
+                      <button type="submit" class="search-icon"><i class="icon icon-search icon-lg"></i></button>
+                    </form>
+                    <!-- /search box -->
+
+          <a href="javascript:void(0)" class="quick-menu d-md-none text-muted" data-toggle="mdrawer" data-target="#drawer-notifications">
+                      <i class="icon icon-notification"></i> 
+           </a>
+
+                    <div class="quick-menu dropdown d-md-none">
+
+                      <!-- Dropdown Link -->
+                      <a href="#" class="dropdown-toggle no-arrow"
+                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img class="dt-avatar size-25" src="https://via.placeholder.com/150x150" alt="Dinesh Suthar">
+                      </a>
+                      <!-- /dropdown link -->
+
+                      <!-- Dropdown Option -->
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="javascript:void(0)">
+                          <i class="icon icon-edit icon-fw"></i> Edit </a>
+                        <a class="dropdown-item" href="javascript:void(0)">
+                          <i class="icon icon-contacts icon-fw"></i> Contact List</a>
+                        <a class="dropdown-item" href="javascript:void(0)">
+                          <i class="icon icon-like icon-fw"></i> Favourite List </a>
+                      </div>
+                      <!-- /dropdown option -->
+
+                    </div>
+
+                    <a href="javascript:void(0)" class="quick-menu d-md-none text-muted" data-toggle="msidebar-content"><i class="icon icon-menu"></i></a>
+                  </div>
+                  <!-- /app quick menu -->
+
+                </div>
+                <!-- /sidebar header -->
+
+                <!-- Sidebar Menu -->
+                <div class="dt-module__sidebar-content">
+
+                  <!-- Card Header -->
+                  <div class="card-header card-nav bg-transparent pt-0">
+                    <ul class="card-header-links nav nav-justified nav-underline" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#tab-pane1" role="tab"
+                           aria-controls="tab-pane1"
+                           aria-selected="true">Chats</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tab-pane2" role="tab" aria-controls="tab-pane2"
+                           aria-selected="true">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- /card header -->
+
+                  <!-- Tab Content-->
+                  <div class="tab-content">
+
+                    <!-- Tab panel -->
+                    <div id="tab-pane1" class="tab-pane active">
+
+                      <!-- Contact Container -->
+                      <div class="dt-contacts__container ps-custom-scrollbar">
+                        <div class="dt-contacts__container-inner">
+                          <!-- Contacts -->
+                          <div class="dt-contacts contacts-list">
+
+                            <!-- Contact -->
+                            <div class="dt-contact" data-location="chat-start.html">
+
+                              <!-- Avatar -->
+                <div class="dt-avatar-status">
+                  <img class="dt-avatar" src="https://via.placeholder.com/150x150" alt="Steve Smith">
+                  <div class="dot-shape bg-success pulse-success dot-shape"></div>
+                </div>
+                              <!-- /avatar -->
+
+                              <!-- Contact Info -->
+                              <div class="dt-contact__info">
+                                <h4 class="dt-contact__title">Domnic Joe</h4>
+                                <p class="dt-contact__desc">It is a long established ...</p>
+                <p class="dt-contact__time text-light-gray">Yesterday</p>
+                              </div>
+                              <!-- /contact info -->
+
+                <!-- Contact Counter -->
+                <div class="dt-contact__counter">
+                  <span class="bg-primary rounded-circle badge text-white">4</span>
+                </div>
+                <!-- /contact counter -->
+
+                            </div>
+                            <!-- /contact -->
+
+                            <!-- Contact -->
+                            <div class="dt-contact" data-location="chat-start.html">
+
+                <!-- Avatar -->
+                <div class="dt-avatar-status">
+                  <span class="dt-avatar bg-dark-blue text-white">RB</span>
+                  <div class="dot-shape bg-yellow pulse-yellow dot-shape"></div>
+                </div>
+                              <!-- /avatar -->
+
+                              <!-- Contact Info -->
+                              <div class="dt-contact__info">
+                                <h4 class="dt-contact__title">Ron Brown</h4>
+                                <p class="dt-contact__desc">English versions from the...</p>
+                <p class="dt-contact__time text-light-gray">Yesterday</p>
+                              </div>
+                              <!-- /contact info -->
+
+                            </div>
+                            <!-- /contact -->
+
+                            <!-- Contact -->
+                            <div class="dt-contact" data-location="chat-start.html">
+
+                <!-- Avatar -->
+                <div class="dt-avatar-status">
+                  <img class="dt-avatar" src="https://via.placeholder.com/150x150" alt="Stella Johnson">
+                  <div class="dot-shape bg-yellow pulse-yellow dot-shape"></div>
+                </div>
+                              <!-- /avatar -->
+
+                              <!-- Contact Info -->
+                              <div class="dt-contact__info">
+                                <h4 class="dt-contact__title">Stella Johnson</h4>
+                                <p class="dt-contact__desc">It is a long established ...</p>
+                <p class="dt-contact__time text-light-gray">Monday</p>
+                              </div>
+                              <!-- /contact info -->
+
+                <!-- Contact Counter -->
+                <div class="dt-contact__counter">
+                  <span class="bg-primary rounded-circle badge text-white">3</span>
+                </div>
+                <!-- /contact counter -->
+
+                            </div>
+                            <!-- /contact -->
+
+                            <!-- Contact -->
+                            <div class="dt-contact" data-location="chat-start.html">
+
+                <!-- Avatar -->
+                <div class="dt-avatar-status">
+                  <span class="dt-avatar bg-orange text-white">PP</span>
+                  <div class="dot-shape bg-yellow pulse-yellow dot-shape"></div>
+                </div>
+                              <!-- /avatar -->
+
+                              <!-- Contact Info -->
+                              <div class="dt-contact__info">
+                                <h4 class="dt-contact__title">Pukhraj Prajapat</h4>
+                                <p class="dt-contact__desc">The standard chunk of Lor...</p>
+                <p class="dt-contact__time text-light-gray">Tuesday</p>
+                              </div>
+                              <!-- /contact info -->
+
+                            </div>
+                            <!-- /contact -->
+
+                            <!-- Contact -->
+                            <div class="dt-contact" data-location="chat-start.html">
+
+                <!-- Avatar -->
+                <div class="dt-avatar-status">
+                   <img class="dt-avatar" src="https://via.placeholder.com/150x150" alt="Anisha">
+                  <div class="dot-shape bg-yellow pulse-yellow dot-shape"></div>
+                </div>
+                              <!-- /avatar -->
+
+                              <!-- Contact Info -->
+                              <div class="dt-contact__info">
+                                <h4 class="dt-contact__title">Anisha</h4>
+                                <p class="dt-contact__desc">tried the suggest...</p>
+                <p class="dt-contact__time text-light-gray">Tuesday</p>
+                              </div>
+                              <!-- /contact info -->
+
+                            </div>
+                            <!-- /contact -->
+
+                            <!-- Contact -->
+                            <div class="dt-contact" data-location="chat-start.html">
+
+                <!-- Avatar -->
+                <div class="dt-avatar-status">
+                  <span class="dt-avatar bg-orange text-white">DS</span>
+                  <div class="dot-shape bg-yellow pulse-yellow dot-shape"></div>
+                </div>
+                              <!-- /avatar -->
+
+                              <!-- Contact Info -->
+                              <div class="dt-contact__info">
+                                <h4 class="dt-contact__title">Dinesh Suthar</h4>
+                                <p class="dt-contact__desc">tried the suggest...</p>
+                <p class="dt-contact__time text-light-gray">Tuesday</p>
+                              </div>
+                              <!-- /contact info -->
+
+                            </div>
+                            <!-- /contact -->
+
+                          </div>
+                          <!-- contacts -->
+                        </div>
+                      </div>
+                      <!-- /contact container -->
+
+                    </div>
+                    <!-- /tab panel -->
+
+                    <!-- Tab panel -->
+                    <div id="tab-pane2" class="tab-pane">
+
+                      <!-- Contact Container -->
+                      <div class="dt-contacts__container ps-custom-scrollbar">
+                        <div class="dt-contacts__container-inner">
+                          <!-- Contacts -->
+                          <div class="dt-contacts contacts-list">
+
+                            <!-- Contact -->
+                            <div class="dt-contact" data-location="chat-start.html">
+
+                              <!-- Avatar -->
+                              <img class="dt-avatar" src="https://via.placeholder.com/150x150"
+                                   alt="Kemroon White">
+                              <!-- /avatar -->
+
+                              <!-- Contact Info -->
+                              <div class="dt-contact__info">
+                                <h4 class="dt-contact__title">Kemroon White</h4>
+                                <p class="dt-contact__desc">tried the suggest...</p>
+                              </div>
+                              <!-- /contact info -->
+
+                            </div>
+                            <!-- /contact -->
+
+                            <!-- Contact -->
+                            <div class="dt-contact" data-location="chat-start.html">
+
+                              <!-- Avatar -->
+                              <span class="dt-avatar bg-orange text-white">DS</span>
+                              <!-- /avatar -->
+
+                              <!-- Contact Info -->
+                              <div class="dt-contact__info">
+                                <h4 class="dt-contact__title">Dinesh Suthar</h4>
+                                <p class="dt-contact__desc">tried the suggest...</p>
+                              </div>
+                              <!-- /contact info -->
+
+                            </div>
+                            <!-- /contact -->
+
+                            <!-- Contact -->
+                            <div class="dt-contact" data-location="chat-start.html">
+
+                              <!-- Avatar -->
+                              <img class="dt-avatar" src="https://via.placeholder.com/150x150" alt="Jimmy Jo">
+                              <!-- /avatar -->
+
+                              <!-- Contact Info -->
+                              <div class="dt-contact__info">
+                                <h4 class="dt-contact__title">Jimmy Jo</h4>
+                                <p class="dt-contact__desc">tried the suggest...</p>
+                              </div>
+                              <!-- /contact info -->
+
+                            </div>
+                            <!-- /contact -->
+
+                            <!-- Contact -->
+                            <div class="dt-contact" data-location="chat-start.html">
+
+                              <!-- Avatar -->
+                              <span class="dt-avatar bg-dark-blue text-white">JB</span>
+                              <!-- /avatar -->
+
+                              <!-- Contact Info -->
+                              <div class="dt-contact__info">
+                                <h4 class="dt-contact__title">Jeo Brown</h4>
+                                <p class="dt-contact__desc">tried the suggest...</p>
+                              </div>
+                              <!-- /contact info -->
+
+                            </div>
+                            <!-- /contact -->
+
+                            <!-- Contact -->
+                            <div class="dt-contact" data-location="chat-start.html">
+
+                              <!-- Avatar -->
+                              <img class="dt-avatar" src="https://via.placeholder.com/150x150"
+                                   alt="Steve Smith">
+                              <!-- /avatar -->
+
+                              <!-- Contact Info -->
+                              <div class="dt-contact__info">
+                                <h4 class="dt-contact__title">Domnic Joe</h4>
+                                <p class="dt-contact__desc">tried the suggest...</p>
+                              </div>
+                              <!-- /contact info -->
+
+                            </div>
+                            <!-- /contact -->
+
+                            <!-- Contact -->
+                            <div class="dt-contact" data-location="chat-start.html">
+
+                              <!-- Avatar -->
+                              <span class="dt-avatar bg-dark-blue text-white">RB</span>
+                              <!-- /avatar -->
+
+                              <!-- Contact Info -->
+                              <div class="dt-contact__info">
+                                <h4 class="dt-contact__title">Ron Brown</h4>
+                                <p class="dt-contact__desc">tried the suggest...</p>
+                              </div>
+                              <!-- /contact info -->
+
+                            </div>
+                            <!-- /contact -->
+
+                            <!-- Contact -->
+                            <div class="dt-contact" data-location="chat-start.html">
+
+                              <!-- Avatar -->
+                              <img class="dt-avatar" src="https://via.placeholder.com/150x150"
+                                   alt="Stella Johnson">
+                              <!-- /avatar -->
+
+                              <!-- Contact Info -->
+                              <div class="dt-contact__info">
+                                <h4 class="dt-contact__title">Stella Johnson</h4>
+                                <p class="dt-contact__desc">tried the suggest...</p>
+                              </div>
+                              <!-- /contact info -->
+
+                            </div>
+                            <!-- /contact -->
+
+                            <!-- Contact -->
+                            <div class="dt-contact" data-location="chat-start.html">
+
+                              <!-- Avatar -->
+                              <span class="dt-avatar bg-orange text-white">PP</span>
+                              <!-- /avatar -->
+
+                              <!-- Contact Info -->
+                              <div class="dt-contact__info">
+                                <h4 class="dt-contact__title">Pukhraj Prajapat</h4>
+                                <p class="dt-contact__desc">tried the suggest...</p>
+                              </div>
+                              <!-- /contact info -->
+
+                            </div>
+                            <!-- /contact -->
+
+                          </div>
+                          <!-- contacts -->
+                        </div>
+                      </div>
+                      <!-- /contact container -->
+
+                    </div>
+                    <!-- /tab panel -->
+
+                  </div>
+                  <!-- /tab content-->
+
+                </div>
+                <!-- /sidebar Menu -->
+
+              </div>
+              <!-- /module sidebar -->
+
+              <!-- Module Container -->
+              <div class="dt-module__container">
+
+                <!-- Module Content -->
+                <div class="dt-module__content">
+
+                  <!-- Module Content Inner -->
+                  <div class="dt-module__content-inner h-100 d-flex flex-column justify-content-center align-items-center">
+                    <div class="icon icon-chat icon-fw icon-7x mb-2 text-light-gray"></div>
+                    <h1 class="display-4 text-light-gray">Select User to start Chat</h1>
+                  </div>
+                  <!-- /module content inner -->
+
+                </div>
+                <!-- /module content -->
+              </div>
+              <!-- /module container -->
+
+              <!-- Module Drawer -->
+              <div class="dt-module__drawer dt-drawer position-left">
+
+                <!-- Module Drawer Inner -->
+                <div class="dt-module__drawer-inner">
+
+                  <div class="dt-module__drawer-header">
+                    <a href="javascript:void(0)" class="d-inline-block" data-dismiss="mdrawer">
+                      <i class="icon icon-arrow-left icon-xl mr-3"></i> <span class="align-middle">Back</span> </a>
+                  </div>
+
+                  <!-- Actionable Drawer -->
+                  <div class="dt-actionable-drawer">
+
+                    <!-- Menu Bar -->
+                    <div class="dt-action-bar">
+
+                      <!-- Action Menu -->
+                      <ul class="dt-action-nav">
+
+                        <!-- Menu Item -->
+                        <li class="dt-action-nav__item">
+                          <a href="javascript:void(0)" class="dt-action-nav__link" data-switch="mdrawer" data-target="#drawer-notifications">
+                            <i class="icon icon-notification icon-fw"></i> </a>
+                        </li>
+                        <!-- /menu item -->
+
+                        <!-- Menu Item -->
+                        <li class="dt-action-nav__item">
+                          <a href="javascript:void(0)" class="dt-action-nav__link" data-switch="mdrawer" data-target="#drawer-search-bar">
+                            <i class="icon icon-search icon-fw"></i> </a>
+                        </li>
+                        <!-- /menu item -->
+
+                      </ul>
+                      <!-- /action menu -->
+
+                    </div>
+                    <!-- /menu bar -->
+
+                    <!-- Drawer Content Area -->
+                    <div class="dt-action-content-wrapper ps-custom-scrollbar">
+
+                      <div class="dt-action-content">
+
+                        <!-- Search -->
+                        <div class="dt-notification fade" id="drawer-search-bar">
+                          <!-- Search Box -->
+                          <form class="search-box right-side-icon w-100 mb-8">
+                            <input class="form-control form-control-lg" id="address-1" name="address-1" placeholder="Search in app..." type="search">
+                            <button type="submit" class="search-icon"><i class="icon icon-search icon-lg"></i></button>
+                          </form>
+                          <!-- /search box -->
+
+                          <h4>Recently Viewed</h4>
+
+                          <!-- Search Result-->
+                          <div class="search-result">
+                            <a href="javascript:void(0)" class="dt-avatar-wrapper">
+                              <!-- Avatar -->
+                              <span class="dt-avatar bg-primary text-white font-italic">PHP</span>
+                              <!-- /avatar -->
+
+                              <!-- Avatar Info -->
+                              <span class="dt-avatar-info">
+                              <span class="dt-avatar-name">Chat Bull</span>
+                              <span class="f-12">Example Web</span>
+                            </span>
+                              <!-- /avatar info -->
+
+                            </a>
+                          </div>
+                          <!-- /search result-->
+
+                          <!-- Search Result-->
+                          <div class="search-result">
+                            <a href="javascript:void(0)" class="dt-avatar-wrapper">
+                              <!-- Avatar -->
+                              <span class="dt-avatar bg-primary text-white font-italic">Ant</span>
+                              <!-- /avatar -->
+
+                              <!-- Avatar Info -->
+                              <span class="dt-avatar-info">
+                              <span class="dt-avatar-name">Flexile</span>
+                              <span class="f-12">Example Web</span>
+                            </span>
+                              <!-- /avatar info -->
+
+                            </a>
+                          </div>
+                          <!-- /search result-->
+
+                          <!-- Search Result-->
+                          <div class="search-result">
+                            <a href="javascript:void(0)" class="dt-avatar-wrapper">
+                              <!-- Avatar -->
+                              <span class="dt-avatar bg-primary text-white font-italic">React</span>
+                              <!-- /avatar -->
+
+                              <!-- Avatar Info -->
+                              <span class="dt-avatar-info">
+                              <span class="dt-avatar-name">Admin Template</span>
+                              <span class="f-12">Example Web</span>
+                            </span>
+                              <!-- /avatar info -->
+
+                            </a>
+                          </div>
+                          <!-- /search result-->
+
+                        </div>
+                        <!-- /search -->
+
+                        <!-- Notification -->
+                        <div class="dt-notification fade" id="drawer-notifications">
+
+                          <div class="d-flex align-items-center mb-6">
+                            <h5 class="mb-0">Notifications (7)</h5>
+
+                            <div class="ml-auto action-area">
+                              <a href="javascript:void(0)">Mark All Read</a>
+
+                              <!-- Dropdown -->
+                              <span class="dropdown ml-2 d-inline-block">
+                              <a class="dropdown-toggle no-arrow" href="#" data-toggle="dropdown"
+                                 aria-haspopup="true" aria-expanded="false">
+                                <i class="icon icon-setting icon-lg text-light-gray"></i>
+                              </a>
+
+                              <span class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="javascript:void(0)">
+                                  <i class="icon icon-edit icon-fw"></i>
+                                  Edit
+                                </a>
+                                <a class="dropdown-item" href="javascript:void(0)">
+                                  <i class="icon icon-contacts icon-fw"></i>
+                                  Contact List</a>
+                                <a class="dropdown-item" href="javascript:void(0)">
+                                  <i class="icon icon-like icon-fw"></i>
+                                  Favourite List
+                                </a>
+                              </span>
+                            </span>
+                              <!-- /dropdown -->
+
+                            </div>
+                          </div>
+
+                          <!-- Media -->
+                          <a href="javascript:void(0)" class="media">
+
+                            <!-- Avatar -->
+                            <img class="dt-avatar mr-3" src="https://via.placeholder.com/150x150" alt="User">
+                            <!-- avatar -->
+
+                            <!-- Media Body -->
+                            <span class="media-body">
+                              <span class="message">
+                                <span class="user-name">Stella Johnson</span> and <span class="user-name">Chris Harris</span>
+                                have birthdays today. Help them celebrate!
+                              </span>
+                              <span class="meta-date">8 hours ago</span>
+                            </span>
+                            <!-- /media body -->
+
+                          </a>
+                          <!-- /media -->
+
+                          <!-- Media -->
+                          <a href="javascript:void(0)" class="media">
+
+                            <!-- Avatar -->
+                            <img class="dt-avatar mr-3" src="https://via.placeholder.com/150x150" alt="User">
+                            <!-- avatar -->
+
+                            <!-- Media Body -->
+                            <span class="media-body">
+                              <span class="message">
+                                <span class="user-name">Jonathan Madano</span> commented on your post.
+                              </span>
+                              <span class="meta-date">9 hours ago</span>
+                            </span>
+                            <!-- /media body -->
+
+                          </a>
+                          <!-- /media -->
+
+                          <!-- Media -->
+                          <a href="javascript:void(0)" class="media">
+
+                            <!-- Avatar -->
+                            <img class="dt-avatar mr-3" src="https://via.placeholder.com/150x150" alt="User">
+                            <!-- avatar -->
+
+                            <!-- Media Body -->
+                            <span class="media-body">
+                        <span class="message">
+                          <span class="user-name">Chelsea Brown</span> sent a video recomendation.
+                        </span>
+                        <span class="meta-date">
+                          <i class="icon icon-menu-right text-primary icon-fw mr-1"></i>
+                          13 hours ago
+                        </span>
+                      </span>
+                            <!-- /media body -->
+
+                          </a>
+                          <!-- /media -->
+
+                          <!-- Media -->
+                          <a href="javascript:void(0)" class="media">
+
+                            <!-- Avatar -->
+                            <img class="dt-avatar mr-3" src="https://via.placeholder.com/150x150" alt="User">
+                            <!-- avatar -->
+
+                            <!-- Media Body -->
+                            <span class="media-body">
+                              <span class="message">
+                                <span class="user-name">Alex Dolgove</span> and <span class="user-name">Chris Harris</span>
+                                like your post.
+                              </span>
+                              <span class="meta-date">
+                                <i class="icon icon-thumb-up text-light-blue icon-fw mr-1"></i>
+                                yesterday at 9:30
+                              </span>
+                            </span>
+                            <!-- /media body -->
+
+                          </a>
+                          <!-- /media -->
+
+                          <!-- Media -->
+                          <a href="javascript:void(0)" class="media">
+
+                            <!-- Avatar -->
+                            <img class="dt-avatar mr-3" src="https://via.placeholder.com/150x150" alt="User">
+                            <!-- avatar -->
+
+                            <!-- Media Body -->
+                            <span class="media-body">
+                              <span class="message">
+                                <span class="user-name">Amay Mathur</span> and <span class="user-name">Domnic Harris</span>
+                                comment your post.
+                              </span>
+                              <span class="meta-date">
+                                <i class="icon icon-chat icon-fw mr-1"></i>
+                                yesterday at 9:30
+                              </span>
+                            </span>
+                            <!-- /media body -->
+
+                          </a>
+                          <!-- /media -->
+
+                          <!-- Media -->
+                          <a href="javascript:void(0)" class="media">
+
+                            <!-- Avatar -->
+                            <img class="dt-avatar mr-3" src="https://via.placeholder.com/150x150" alt="User">
+                            <!-- avatar -->
+
+                            <!-- Media Body -->
+                            <span class="media-body">
+                              <span class="message">
+                                <span class="user-name">Steve Smith</span> and <span class="user-name">Jimmy</span>
+                                inviting on our page.
+                              </span>
+                              <span class="meta-date">
+                                Monday at 18:30
+                              </span>
+                            </span>
+                            <!-- /media body -->
+
+                          </a>
+                          <!-- /media -->
+
+                          <!-- Media -->
+                          <a href="javascript:void(0)" class="media">
+
+                            <!-- Avatar -->
+                            <img class="dt-avatar mr-3" src="https://via.placeholder.com/150x150" alt="User">
+                            <!-- avatar -->
+
+                            <!-- Media Body -->
+                            <span class="media-body">
+                              <span class="message">
+                                <span class="user-name">Alex Dolgove</span> and <span class="user-name">Chris Harris</span>
+                                like your post.
+                              </span>
+                              <span class="meta-date">
+                                <i class="icon icon-thumb-up text-light-blue icon-fw mr-1"></i>
+                                yesterday at 9:30
+                              </span>
+                            </span>
+                            <!-- /media body -->
+
+                          </a>
+                          <!-- /media -->
+                        </div>
+                        <!-- /notification -->
+
+                      </div>
+
+                    </div>
+                    <!-- /drawer content area -->
+
+                  </div>
+                  <!-- /actionable drawer -->
+
+                </div>
+                <!-- /module drawer inner -->
+
+              </div>
+              <!-- /module drawer -->
+
+            </div>
+            <!-- /module -->
+
+          </div>
+          <!-- /grid item -->
+
+        </div>
+        <!-- /grid -->
