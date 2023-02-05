@@ -1,1 +1,1 @@
-# WieldyDotNet
+[![GitHub](https://img.shields.io/github/license/muneebrbaig/DotNetMVCBootstrap?color=2da44e)](https://github.com/muneebrbaig/DotNetMVCBootstrap/blob/master/LICENSE)
